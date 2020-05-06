@@ -31,7 +31,5 @@ public class NewPlayerMovement : MonoBehaviour {
 
         Debug.DrawLine(transform.position, transform.position + (transform.forward * vInput), Color.blue);
         Debug.DrawLine(transform.position, transform.position + (transform.right * hInput), Color.red);
-
-        Debug.Log(transform.forward);
     }
 }

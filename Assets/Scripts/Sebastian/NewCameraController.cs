@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NewCameraController : MonoBehaviour {
-    public Transform player;
-    void Start()
-    {
-        
-    }
+    public Transform camLock;
+    public float followSpeed;
+    public float distanceFactor;
+    public bool useDistanceFactor;
+
+    private Vector3 targetPos;
 
     void Update() {
-        Vector3 playerPos;
-        //ztransform.position = player.position + (player.up * 5f);
-        //transform.LookAt(player);
-       // transform.eulerAngles = new Vector3(transform.eulerAngles.x);
+        targetPos = camLock.position;
+        float distanceFromTarget = Vector3.Distance(targetPos, transform.position);
+        float appliedDistanceFactor = distanceFromTarget > 1f ? distanceFromTarget * distanceFactor : 0f;
+
+        float moveSpeed = useDistanceFactor ? followSpeed * appliedDistanceFactor : followSpeed;
+        
+        transform.position = Vector3.Lerp(transform.position, targetPos, moveSpeed * Time.deltaTime);
+        transform.rotation = camLock.rotation;
     }
 }
