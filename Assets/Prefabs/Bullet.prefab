@@ -120,3 +120,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 50
+  bulletInaccuracy: 5
+  lifeTime: 1.6

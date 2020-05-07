@@ -67,13 +67,21 @@
      <Compile Include="Assets\Scripts\MovementController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Sebastian\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Sebastian\ExplosionEffect.cs" />
      <Compile Include="Assets\Scripts\Sebastian\GravityAttractor.cs" />
      <Compile Include="Assets\Scripts\Sebastian\GravityBody.cs" />
+     <Compile Include="Assets\Scripts\Sebastian\Grenade.cs" />
      <Compile Include="Assets\Scripts\Sebastian\NewCameraController.cs" />
      <Compile Include="Assets\Scripts\Sebastian\NewPlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Sebastian\Shoot.cs" />
+     <Compile Include="Assets\Scripts\Sebastian\WeaponManager.cs" />
      <Compile Include="Assets\Scripts\SmoothFollow.cs" />
+     <Compile Include="Assets\Scripts\UI\GrenadeUI.cs" />
+     <Compile Include="Assets\Scripts\UI\WeaponUI.cs" />
      <Compile Include="Assets\Scripts\Util.cs" />
+     <Compile Include="Assets\Stagit\SkyboxEarthPlanets\script\skyboxspace_demo_v1.cs" />
+     <Compile Include="Assets\Stagit\SkyboxEarthPlanets\script\skyboxspace_mouselook_v1.cs" />
+     <None Include="Assets\Stagit\SkyboxEarthPlanets\readme.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Jake/SPHERICAL/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
