@@ -61,21 +61,17 @@
      <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Audio\Sound.cs" />
      <Compile Include="Assets\Scripts\Audio\SoundGroup.cs" />
-     <Compile Include="Assets\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Scripts\FauxGravityAttractor.cs" />
-     <Compile Include="Assets\Scripts\FauxGravityBody.cs" />
-     <Compile Include="Assets\Scripts\MovementController.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\Sebastian\Bullet.cs" />
-     <Compile Include="Assets\Scripts\Sebastian\ExplosionEffect.cs" />
-     <Compile Include="Assets\Scripts\Sebastian\GravityAttractor.cs" />
-     <Compile Include="Assets\Scripts\Sebastian\GravityBody.cs" />
-     <Compile Include="Assets\Scripts\Sebastian\Grenade.cs" />
-     <Compile Include="Assets\Scripts\Sebastian\NewCameraController.cs" />
-     <Compile Include="Assets\Scripts\Sebastian\NewPlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\Sebastian\Shoot.cs" />
-     <Compile Include="Assets\Scripts\Sebastian\WeaponManager.cs" />
-     <Compile Include="Assets\Scripts\SmoothFollow.cs" />
+     <Compile Include="Assets\Scripts\Gravity\GravityAttractor.cs" />
+     <Compile Include="Assets\Scripts\Gravity\GravityBody.cs" />
+     <Compile Include="Assets\Scripts\Player\NewCameraController.cs" />
+     <Compile Include="Assets\Scripts\Player\NewPlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Player\Shoot.cs" />
+     <Compile Include="Assets\Scripts\Player\WeaponManager.cs" />
+     <Compile Include="Assets\Scripts\Prefabs\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Prefabs\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Prefabs\EnemyDeathParticle.cs" />
+     <Compile Include="Assets\Scripts\Prefabs\ExplosionEffect.cs" />
+     <Compile Include="Assets\Scripts\Prefabs\Grenade.cs" />
      <Compile Include="Assets\Scripts\UI\GrenadeUI.cs" />
      <Compile Include="Assets\Scripts\UI\WeaponUI.cs" />
      <Compile Include="Assets\Scripts\Util.cs" />
@@ -100,20 +96,20 @@
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>C:/Users/Jake/SPHERICAL/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Postprocessing.Editor">
+ <HintPath>C:/Users/Jake/SPHERICAL/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/Users/Jake/SPHERICAL/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Postprocessing.Runtime">
+ <HintPath>C:/Users/Jake/SPHERICAL/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/Jake/SPHERICAL/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/Jake/SPHERICAL/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Postprocessing.Editor">
- <HintPath>C:/Users/Jake/SPHERICAL/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Postprocessing.Runtime">
- <HintPath>C:/Users/Jake/SPHERICAL/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

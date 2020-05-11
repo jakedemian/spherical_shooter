@@ -107,6 +107,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0e008aaa9980b4f869aa20179a1dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planetLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  adjustmentMin: 0.05
+  adjustmentMax: 1
+  adjusted: 0
+  adjustment: 0
 --- !u!114 &-7068743248500859549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,3 +129,6 @@ MonoBehaviour:
   bulletSpeed: 50
   bulletInaccuracy: 5
   lifeTime: 1.6
+  collisionRadius: 0.2
+  damage: 1
+  knockbackPower: 3

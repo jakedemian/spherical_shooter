@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
  using System.Collections.Generic;
  using UnityEngine;
  
@@ -7,17 +8,27 @@
 
      public float adjustmentMin = 0.05f;
      public float adjustmentMax = 1f;
-     
+
+     public bool usePhysicsGravity;
+     public float physicsGravity;
+
      private GravityAttractor planet;
      
      [HideInInspector] public bool adjusted = false;
      [HideInInspector] public float adjustment;
+     private Rigidbody rb;
+     
      
      void Awake() {
          planet = GameObject.FindGameObjectWithTag("planet").GetComponent<GravityAttractor>();
+         rb = GetComponent<Rigidbody>();
      }
 
      void Update() {
+         if (usePhysicsGravity) {
+             return;
+         };
+         
          planet.Attract(transform, adjustment);
 
          if (!adjusted) {
@@ -33,6 +44,12 @@
                      Debug.Log("adjusting " + transform.name + " by " + adjustment);
                  }
              }
+         }
+     }
+
+     private void FixedUpdate() {
+         if (usePhysicsGravity) {
+             rb.AddForce(-transform.position.normalized * physicsGravity, ForceMode.Force);
          }
      }
 
